@@ -1,0 +1,1 @@
+require('./item-details.scss');
