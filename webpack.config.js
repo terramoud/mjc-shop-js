@@ -15,8 +15,10 @@ module.exports = {
     filename: '[name]/[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
+  mode: 'development',
   devServer: {
-    contentBase: './dist',
+    static: './dist',
+    hot: true, // Enable hot module replacement
   },
   module: {
     rules: [
@@ -37,22 +39,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pages/cart/cart.html',
       chunks: ['cart'],
-      filename: 'cart/index.html'
+      filename: 'cart/cart.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/login/login.html',
       chunks: ['login'],
-      filename: 'login/index.html'
+      filename: 'login/login.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/register/register.html',
       chunks: ['register'],
-      filename: 'register/index.html'
+      filename: 'register/register.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/pages/add-item/add-item.html',
       chunks: ['add-item'],
-      filename: 'add-item/index.html'
+      filename: 'add-item/add-item.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/item-details/item-details.html',
+      chunks: ['item-details'],
+      filename: 'item-details/item-details.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/main/main.html',
+      chunks: ['main'],
+      filename: 'main/main.html'
     }),
     new MiniCssExtractPlugin({
       filename: '[name]/[name].css'
