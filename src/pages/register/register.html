@@ -2,9 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
+<section class="grid-container">
+    <div class="grid-item">
+        <header class="header">
+            <div class="header-left-side">
+                <div class="burger-menu">
+                    <span class="material-icons">menu</span>
+                </div>
+                <div class="logo">
+                    <span class="material-icons">card_giftcard</span>
+                </div>
+            </div>
+            <div class="search-form">
+                <input class="search-field" type="text" name="search-query" placeholder="search by item name"/>
+                <select class="categories-dropdown" name="" id="">
+                    <optgroup label="All Categories">
+                        <option selected value="">All Categories</option>
+                        <option value="">Some Category</option>
+                    </optgroup>
+                </select>
+            </div>
+            <nav class="navbar header-right-side">
+                <button class="favorite-button">
+                    <span class="material-icons">favorite</span>
+                </button>
+                <button class="cart-button">
+                    <span class="material-icons">shopping_cart</span>
+                </button>
+                <div class="login-button-wrapper">
+                    <button class="login-button">Login</button>
+                    <span class="login-delimiter">|</span>
+                    <button class="signup-button">Sign Up</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="grid-item">
+        <main class="content">
+            <section class="register-wrapper">
+                <div class="register-form-header">
+                    <h2 class="register-form-title">Register</h2>
+                </div>
+                <div class="register-form-wrapper">
+                    <form action="" class="register-form">
+                        <div class="register-form-fieldset">
+                            <label>Login Name
+                                <input type="text" placeholder=""/>
+                            </label>
+                            <label>Password
+                                <input type="password" placeholder=""/>
+                            </label>
+                            <label>Email
+                                <input type="email" placeholder=""/>
+                            </label>
+                        </div>
+                        <div class="register-form-fieldset">
+                            <label>First Name
+                                <input type="text" placeholder=""/>
+                            </label>
+                            <label>Repeat Password
+                                <input type="password" placeholder=""/>
+                            </label>
+                            <label>Address
+                                <input type="email" placeholder=""/>
+                            </label>
+                            <div class="register-form-buttons">
+                                <button class="button-cancel register-button" type="submit">Cancel</button>
+                                <button class="button-approve register-button" type="submit">Sing Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="grid-item">
+        <footer class="footer">
+            <!-- Footer content goes here -->
+        </footer>
+    </div>
+</section>
 </body>
 </html>

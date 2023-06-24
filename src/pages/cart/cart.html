@@ -2,9 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
+<section class="grid-container">
+    <div class="grid-item">
+        <header class="header">
+            <div class="header-left-side">
+                <div class="burger-menu">
+                    <span class="material-icons">menu</span>
+                </div>
+                <div class="logo">
+                    <span class="material-icons">card_giftcard</span>
+                </div>
+            </div>
+            <div class="search-form">
+                <input class="search-field" type="text" name="search-query" placeholder="search by item name"/>
+                <select class="categories-dropdown" name="" id="">
+                    <optgroup label="All Categories">
+                        <option selected value="">All Categories</option>
+                        <option value="">Some Category</option>
+                    </optgroup>
+                </select>
+            </div>
+            <nav class="navbar header-right-side">
+                <button class="favorite-button">
+                    <span class="material-icons">favorite</span>
+                </button>
+                <button class="cart-button">
+                    <span class="material-icons">shopping_cart</span>
+                </button>
+                <div class="login-button-wrapper">
+                    <button class="login-button">Login</button>
+                    <span class="login-delimiter">|</span>
+                    <button class="signup-button">Sign Up</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="grid-item">
+        <main class="content">
+            <div class="cart-header">
+                <h2 class="cart-title">Chekout</h2>
+            </div>
+            <section class="content-wrapper">
+                <div class="cart">
+                    <div class="mini-card">
+                        <div class="mini-card-wrapper">
+                            <div class="mini-card-image"></div>
+                            <div class="mini-card-content">
+                                <div class="mini-card-name">Coupon Name</div>
+                                <div class="mini-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</div>
+                            </div>
+                        </div>
+                        <div class="mini-card-price">$200</div>
+                    </div>
+                    <div class="mini-card">
+                        <div class="mini-card-wrapper">
+                            <div class="mini-card-image"></div>
+                            <div class="mini-card-content">
+                                <div class="mini-card-name">Coupon Name</div>
+                                <div class="mini-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</div>
+                            </div>
+                        </div>
+                        <div class="mini-card-price">$120</div>
+                    </div>
+                    <div class="mini-card">
+                        <div class="mini-card-wrapper">
+                            <div class="mini-card-image"></div>
+                            <div class="mini-card-content">
+                                <div class="mini-card-name">Coupon Name</div>
+                                <div class="mini-card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</div>
+                            </div>
+                        </div>
+                        <div class="mini-card-price">$40</div>
+                    </div>
+                    <form class="cart-footer">
+                        <div class="cart-total">
+                            <div class="cart-total-content">Total</div>
+                            <div class="cart-total-price">$360</div>
+                        </div>
+                        <div class="cart-buttons">
+                            <button class="button-cancel cart-back">Back</button>
+                            <button class="button-approve cart-checkout">Checkout</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="grid-item">
+        <footer class="footer">
+            <!-- Footer content goes here -->
+        </footer>
+    </div>
+</section>
 </body>
 </html>

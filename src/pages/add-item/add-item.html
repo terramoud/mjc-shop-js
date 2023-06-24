@@ -2,9 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Add new item</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
+<section class="grid-container">
+    <div class="grid-item">
+        <header class="header">
+            <div class="header-left-side">
+                <div class="burger-menu">
+                    <span class="material-icons">menu</span>
+                </div>
+                <div class="logo">
+                    <span class="material-icons">card_giftcard</span>
+                </div>
+            </div>
+            <div class="search-form">
+                <input class="search-field" type="text" name="search-query" placeholder="search by item name"/>
+                <select class="categories-dropdown" name="" id="">
+                    <optgroup label="All Categories">
+                        <option selected value="">All Categories</option>
+                        <option value="">Some Category</option>
+                    </optgroup>
+                </select>
+            </div>
+            <nav class="navbar header-right-side">
+                <button class="favorite-button">
+                    <span class="material-icons">favorite</span>
+                </button>
+                <button class="cart-button">
+                    <span class="material-icons">shopping_cart</span>
+                </button>
+                <div class="login-button-wrapper">
+                    <button class="login-button">Login</button>
+                    <span class="login-delimiter">|</span>
+                    <button class="signup-button">Sign Up</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="grid-item">
+        <main class="content">
+            <section class="content-wrapper">
+                <div class="add-item-form-header">
+                    <h2 class="add-item-form-title">Add new Coupon</h2>
+                </div>
+                <div class="add-item-form-wrapper">
+                    <form action="" class="add-item-form">
+                        <div class="add-item-form-fieldset">
+                            <label>Company
+                                <input type="text" placeholder=""/>
+                            </label>
+                            <label>Category
+                                <select class="categories-dropdown" name="">
+                                    <optgroup label="Category name">
+                                        <option selected value="">Category name</option>
+                                        <option value="">Some Category</option>
+                                    </optgroup>
+                                </select>
+                            </label>
+                            <label>Valid to
+                                <input type="date" placeholder=""/>
+                            </label>
+                            <label>Price
+                                <input type="number" placeholder=""/>
+                            </label>
+                            <label>Images
+                                <input type="file" placeholder=""/>
+                            </label>
+                        </div>
+                        <div class="add-item-form-fieldset">
+                            <label>Item Name
+                                <input type="text" placeholder=""/>
+                            </label>
+                            <label>Short description
+                                <textarea rows="4" cols="50" placeholder=""></textarea>
+                            </label>
+                            <label>Long description
+                                <textarea rows="4" cols="50" placeholder=""></textarea>
+                            </label>
+                            <div class="add-item-form-buttons">
+                                <button class="button-cancel back-button" type="submit">Back</button>
+                                <button class="button-approve save-button" type="submit">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="grid-item">
+        <footer class="footer">
+            <!-- Footer content goes here -->
+        </footer>
+    </div>
+</section>
 </body>
 </html>

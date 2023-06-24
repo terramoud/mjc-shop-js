@@ -1,0 +1,43 @@
+@import './src/components/base/variables';
+@import './src/components/base/mixins';
+@import './src/components/base/base';
+@import './src/components/header/header';
+@import './src/components/header/burger/burger';
+@import './src/components/header/logo/logo';
+@import './src/components/header/search-form/search-form';
+@import './src/components/header/navbar/navbar';
+@import './src/components/button-approve/button-approve';
+@import './src/components/button-cancel/button-cancel';
+@import './src/components/category-card/category-card';
+@import './src/components/card/card';
+
+@media only screen and (min-width: 320px) {
+  .content {
+    background-color: $color-background;
+  }
+
+  .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 8%;
+    padding-bottom: 0.5rem;
+    background-color: $categories-list-bg-color;
+  }
+
+ .coupon-card-wrapper {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   padding: 2rem 1rem;
+   & .card {
+     padding: 0.25rem;
+     padding-bottom: 1.5rem;
+   }
+ }
+}
+
+

@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-
+<section class="grid-container">
+    <div class="grid-item">
+        <header class="header">
+            <div class="header-left-side">
+                <div class="burger-menu">
+                    <span class="material-icons">menu</span>
+                </div>
+                <div class="logo">
+                    <span class="material-icons">card_giftcard</span>
+                </div>
+            </div>
+            <div class="search-form">
+                <input class="search-field" type="text" name="search-query" placeholder="search by item name"/>
+                <select class="categories-dropdown" name="" id="">
+                    <optgroup label="All Categories">
+                        <option selected value="">All Categories</option>
+                        <option value="">Some Category</option>
+                    </optgroup>
+                </select>
+            </div>
+            <nav class="navbar header-right-side">
+                <button class="favorite-button">
+                    <span class="material-icons">favorite</span>
+                </button>
+                <button class="cart-button">
+                    <span class="material-icons">shopping_cart</span>
+                </button>
+                <div class="login-button-wrapper">
+                    <button class="login-button">Login</button>
+                    <span class="login-delimiter">|</span>
+                    <button class="signup-button">Sign Up</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="grid-item">
+        <main class="content">
+            <section class="content-wrapper">
+                <div class="item">
+                    <div class="item-image"></div>
+                    <div class="item-description-wrapper">
+                        <div class="item-title">Item Detailed Description</div>
+                        <div class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </div>
+                <div class="side-bar">
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-wrapper">
+                            <h3 class="sidebar-card-title">Coupon Name</h3>
+                            <div class="sidebar-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </div>
+                        </div>
+                        <div class="sidebar-card-wrapper">
+                            <div class="sidebar-card-expire-time">
+                                <div class="sidebar-card-expire-text">Time left to Buy</div>
+                                <div class="sidebar-card-remained-time">12 days 14 hours</div>
+                            </div>
+                            <div class="sidebar-card-footer">
+                                <div class="sidebar-card-price">$235</div>
+                                <button class="sidebar-card-add-to-cart">
+                                    <span class="sidebar-card-add-to-cart-text">Add to cart</span>
+                                    <span class="material-icons">shopping_cart</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="grid-item">
+        <footer class="footer">
+            <!-- Footer content goes here -->
+        </footer>
+    </div>
+</section>
 </body>
 </html>
