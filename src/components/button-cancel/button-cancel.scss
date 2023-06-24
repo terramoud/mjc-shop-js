@@ -1,18 +1,36 @@
 @media only screen and (max-width: 576px) {
   .button-cancel {
-
+    border: 2px solid $field-border-color;
+    color: $cancel-button-color;
+    font-family: $main-font-family;
+    text-align: center;
+    font-size: 1rem;
+    width: 11rem;
+    height: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .button-cancel {
-
+    border: 2px solid $field-border-color;
+    color: $cancel-button-color;
+    font-family: $main-font-family;
+    text-align: center;
+    font-size: 1rem;
+    width: 11rem;
+    height: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .button-cancel {
-
+    border: 2px solid $field-border-color;
+    color: $cancel-button-color;
+    font-family: $main-font-family;
+    text-align: center;
+    font-size: 1rem;
+    width: 11rem;
+    height: 2.5rem;
   }
 }
 

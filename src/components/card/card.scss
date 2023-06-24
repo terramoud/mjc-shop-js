@@ -1,27 +1,9 @@
 @media only screen and (max-width: 576px) {
   .card {
-
-  }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-  .card {
-
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .card {
-
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .card {
+    min-width: 14rem;
     &-image {
       background-color: $card-image-bg-color;
       height: 12rem;
-      width: 13rem;
     }
     &-sections-wrapper {
       background-color: $category-bg-color;
@@ -57,6 +39,149 @@
       padding: 0.25rem 0.5rem;
       font-size: 0.75rem;
       color: $default-font-color;
+      width: 6rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .card {
+    min-width: 14rem;
+    &-image {
+      background-color: $card-image-bg-color;
+      height: 12rem;
+    }
+    &-sections-wrapper {
+      background-color: $category-bg-color;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    &-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    &-name {
+
+    }
+    &-like-button {
+      & .material-icons {
+        font-size: 1rem;
+      }
+    }
+    &-description {
+      font-size: 0.7rem;
+    }
+    &-expire-time {
+      font-size: 0.5rem;
+    }
+    & .add-to-card {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      color: $default-font-color;
+      width: 6rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    min-width: 14rem;
+    &-image {
+      background-color: $card-image-bg-color;
+      height: 12rem;
+    }
+    &-sections-wrapper {
+      background-color: $category-bg-color;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    &-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    &-name {
+
+    }
+    &-like-button {
+      & .material-icons {
+        font-size: 1rem;
+      }
+    }
+    &-description {
+      font-size: 0.7rem;
+    }
+    &-expire-time {
+      font-size: 0.5rem;
+    }
+    & .add-to-card {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      color: $default-font-color;
+      width: 6rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .card {
+    min-width: 14rem;
+    &-image {
+      background-color: $card-image-bg-color;
+      height: 12rem;
+    }
+    &-sections-wrapper {
+      background-color: $category-bg-color;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    &-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0.5rem;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    &-name {
+
+    }
+    &-like-button {
+      & .material-icons {
+        font-size: 1rem;
+      }
+    }
+    &-description {
+      font-size: 0.7rem;
+    }
+    &-expire-time {
+      font-size: 0.5rem;
+    }
+    & .add-to-card {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      color: $default-font-color;
+      width: 6rem;
+      height: 2rem;
     }
   }
 }

@@ -1,18 +1,39 @@
 @media only screen and (max-width: 576px) {
   .category-card {
-
+    &-image {
+      background-color: $category-bg-color;
+      height: 4rem;
+      width: 4rem;
+    }
+    &-name {
+      padding-top: 0.5rem;
+    }
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .category-card {
-
+    &-image {
+      background-color: $category-bg-color;
+      height: 4rem;
+      width: 4rem;
+    }
+    &-name {
+      padding-top: 0.5rem;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .category-card {
-
+    &-image {
+      background-color: $category-bg-color;
+      height: 4rem;
+      width: 4rem;
+    }
+    &-name {
+      padding-top: 0.5rem;
+    }
   }
 }
 
