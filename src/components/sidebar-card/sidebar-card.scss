@@ -1,0 +1,223 @@
+@media only screen and (max-width: 576px) {
+  .sidebar-card {
+    background-color: $category-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 22rem;
+    height: 22rem;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      &:last-child {
+        gap: 2rem 0;
+      }
+    }
+
+    &-title {
+      margin-top: 0;
+    }
+
+    &-description {
+      color: $mini-card-font-color;
+    }
+
+    &-expire-text {
+      color: $register-form-header-color;
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    &-price {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &-add-to-cart {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0 0.5rem;
+    }
+
+    &-add-to-cart-text {
+      color: $add-to-cart-button-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .sidebar-card {
+    background-color: $category-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 20rem;
+    max-width: 22rem;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      &:last-child {
+        gap: 2rem 0;
+      }
+    }
+
+    &-title {
+      margin-top: 0;
+    }
+
+    &-description {
+      color: $mini-card-font-color;
+    }
+
+    &-expire-text {
+      color: $register-form-header-color;
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    &-price {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &-add-to-cart {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0 0.5rem;
+    }
+
+    &-add-to-cart-text {
+      color: $add-to-cart-button-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sidebar-card {
+    background-color: $category-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    height: 20rem;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      &:last-child {
+        gap: 2rem 0;
+      }
+    }
+
+    &-title {
+      margin-top: 0;
+    }
+
+    &-description {
+      color: $mini-card-font-color;
+      max-height: 9rem;
+      overflow: hidden;
+    }
+
+    &-expire-text {
+      color: $register-form-header-color;
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    &-price {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &-add-to-cart {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0 0.5rem;
+    }
+
+    &-add-to-cart-text {
+      color: $add-to-cart-button-color;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+    .sidebar-card {
+      background-color: $category-bg-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+      height: 20rem;
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+          gap: 2rem 0;
+        }
+      }
+
+      &-title {
+        margin-top: 0;
+      }
+
+      &-description {
+        color: $mini-card-font-color;
+        max-height: 9rem;
+        overflow: hidden;
+      }
+
+      &-expire-text {
+        color: $register-form-header-color;
+      }
+
+      &-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      &-price {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      &-add-to-cart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0 0.5rem;
+      }
+
+      &-add-to-cart-text {
+        color: $add-to-cart-button-color;
+      }
+    }
+}
+
+

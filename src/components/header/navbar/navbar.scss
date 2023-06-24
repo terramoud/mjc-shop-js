@@ -1,0 +1,41 @@
+@media only screen and (max-width: 370px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    .material-icons {
+      color: $icon-color;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .navbar {
+    .material-icons {
+      color: $icon-color;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    .material-icons {
+      color: $icon-color;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .navbar {
+    .material-icons {
+      color: $icon-color;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+* {
+  font-family: $main-font-family;
+  box-sizing: border-box;
+}
+
+button {
+  @include button-reset;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  //overflow: overlay;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item {
+
+}
+
+/*fieldset {
+	border: 0;
+}
+
+input {
+  outline: none;
+  margin: 0px;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  background: none;
+}*/
+/*
+h3 {
+  margin: 0;
+}
+*/
+

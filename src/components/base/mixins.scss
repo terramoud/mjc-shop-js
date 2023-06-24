@@ -1,0 +1,96 @@
+@mixin button-reset {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin Pagination-NextPrevButton {
+  width: 40px;
+  height: 40px;
+  background: $DatepickerGradientCurrentData;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $background;
+  cursor: pointer;
+  &:hover {
+    background: $DatepickerGradientCurrentDataFocus;
+  }
+}
+
+@mixin InputField {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $DarkShade25;
+  margin: 0;
+  padding: 13px 14px;
+  outline: none;
+  width: 320px;
+  height: 44px;
+  background: $background;
+  border: 1px solid $DarkShade25;
+  box-sizing: border-box;
+  border-radius: 4px;
+  letter-spacing: -0.2px;
+}
+
+@mixin WidgetTitle {
+  font-family: Quicksand, 'Open Sans';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $DarkShade100;
+  margin: 0;
+}
+
+@mixin TitleInsideWidget {
+  font-family: Quicksand, 'Open Sans';
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $DarkShade100;
+  margin: 0;
+}
+
+@mixin LabelText {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $DarkShade100;
+  margin: 0;
+}
+
+@mixin BodyText {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $DarkShade75;
+  margin: 0;
+}
+
+@mixin textCentering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
