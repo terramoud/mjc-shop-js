@@ -11,20 +11,186 @@
 @import '../../components/mini-card/mini-card';
 
 @media only screen and (max-width: 576px) {
-  .burger-menu {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .cart-header {
+    padding: 1rem 17%;
+    background-color: $register-form-header-color;
+  }
+
+  .cart-title {
+    color: $default-light-font-color;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .cart {
+    padding: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+
+    &-footer {
+      border-top: 1px solid $cart-delimiter-font-color;
+    }
+
+    &-total {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 2.5rem 1rem;
+      font-size: 1.2rem;
+      gap: 0 5rem;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 2rem;
+    }
+
+    &-back {
+      font-weight: bold;
+      width: 46%;
+    }
+
+    &-checkout {
+      font-weight: bold;
+      width: 46%;
+    }
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-  .burger-menu {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .cart-header {
+    padding: 1rem 1rem;
+    background-color: $register-form-header-color;
+  }
+
+  .cart-title {
+    color: $default-light-font-color;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .cart {
+    padding: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+
+    &-footer {
+      border-top: 1px solid $cart-delimiter-font-color;
+    }
+
+    &-total {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 2.5rem 1rem;
+      font-size: 1.2rem;
+      gap: 0 5rem;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 2rem 0;
+      gap: 0 1rem;
+    }
+
+    &-back {
+      font-weight: bold;
+    }
+
+    &-checkout {
+      font-weight: bold;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .burger-menu {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .cart-header {
+    padding: 1rem 17%;
+    background-color: $register-form-header-color;
+  }
+
+  .cart-title {
+    color: $default-light-font-color;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .cart {
+    padding: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+
+    &-footer {
+      border-top: 1px solid $cart-delimiter-font-color;
+    }
+
+    &-total {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 2.5rem 1rem;
+      font-size: 1.2rem;
+      gap: 0 5rem;
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 2rem 0;
+      gap: 0 1rem;
+    }
+
+    &-back {
+      font-weight: bold;
+    }
+
+    &-checkout {
+      font-weight: bold;
+    }
   }
 }
 

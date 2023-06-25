@@ -1,18 +1,144 @@
 @media only screen and (max-width: 576px) {
-  .burger-menu {
+  .mini-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 0;
+    box-shadow: 0px 0px 10px 1px $search-border-color;
+    padding-bottom: 1rem;
 
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem 2rem;
+    }
+
+    &-image {
+      height: 12rem;
+      width: 100%;
+      background-color: $categories-list-bg-color;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $mini-card-font-color;
+    }
+
+    &-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &-description {
+      padding: 0.5rem;
+    }
+
+    &-price-wrapper {
+    }
+
+    &-price {
+      font-size: 1.2rem;
+    }
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-  .burger-menu {
+  .mini-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
 
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 0 2rem;
+    }
+
+    &-image {
+      height: 6rem;
+      width: 6rem;
+      background-color: $categories-list-bg-color;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      max-width: 55%;
+      color: $mini-card-font-color;
+    }
+
+    &-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &-description {
+
+    }
+
+    &-price-wrapper {
+    }
+
+    &-price {
+      font-size: 1.2rem;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .burger-menu {
+  .mini-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
 
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 0 2rem;
+    }
+
+    &-image {
+      height: 6rem;
+      width: 6rem;
+      background-color: $categories-list-bg-color;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      max-width: 55%;
+      color: $mini-card-font-color;
+    }
+
+    &-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &-description {
+
+    }
+
+    &-price-wrapper {
+    }
+
+    &-price {
+      font-size: 1.2rem;
+    }
   }
 }
 
