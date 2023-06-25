@@ -9,53 +9,210 @@
 @import './src/components/login-form/login-form';
 @import './src/components/button-approve/button-approve';
 
-button {
-  @include button-reset;
-}
-
-.content {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  height: calc(100vh);
-  background-color: $color-background;
-}
-
-.login-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 13.5rem;
-  width: 26rem;
-  height: 27rem;
-  & .login-form-logo {
-    position: absolute;
-    border-radius: 50%;
-    background: $logo-background-color;
-    height: 13.3rem;
-    width: 13.3rem;
-    top: 0%;
+@media only screen and (max-width: 576px) {
+  .content {
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    & .material-icons {
+    min-height: calc(100vh);
+    background-color: $color-background;
+  }
+
+  .login-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 6rem;
+    width: 95%;
+    height: 27rem;
+
+    & .login-form-logo {
       position: absolute;
-      font-size: 10rem;
-      color: red;
+      border-radius: 50%;
+      background: $logo-background-color;
+      height: 13.3rem;
+      width: 13.3rem;
+      top: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .material-icons {
+        position: absolute;
+        font-size: 10rem;
+        color: red;
+      }
+    }
+
+    & .login-form-wrapper {
+      background-color: $form-background-color;
+      border: $logo-form-border-color solid 1px;
+      box-sizing: border-box;
+      height: 20.5rem;
+      display: flex;
+      align-items: flex-end;
     }
   }
-  & .login-form-wrapper {
-    background-color: $form-background-color;
-    border: $logo-form-border-color solid 1px ;
-    box-sizing: border-box;
-    height: 20.5rem;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+
+  .content {
     display: flex;
-    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: calc(100vh);
+    background-color: $color-background;
+  }
+
+  .login-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 13.5rem;
+    width: 26rem;
+    height: 27rem;
+
+    & .login-form-logo {
+      position: absolute;
+      border-radius: 50%;
+      background: $logo-background-color;
+      height: 13.3rem;
+      width: 13.3rem;
+      top: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .material-icons {
+        position: absolute;
+        font-size: 10rem;
+        color: red;
+      }
+    }
+
+    & .login-form-wrapper {
+      background-color: $form-background-color;
+      border: $logo-form-border-color solid 1px;
+      box-sizing: border-box;
+      height: 20.5rem;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: calc(100vh);
+    background-color: $color-background;
+  }
+
+  .login-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 13.5rem;
+    width: 26rem;
+    height: 27rem;
+
+    & .login-form-logo {
+      position: absolute;
+      border-radius: 50%;
+      background: $logo-background-color;
+      height: 13.3rem;
+      width: 13.3rem;
+      top: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .material-icons {
+        position: absolute;
+        font-size: 10rem;
+        color: red;
+      }
+    }
+
+    & .login-form-wrapper {
+      background-color: $form-background-color;
+      border: $logo-form-border-color solid 1px;
+      box-sizing: border-box;
+      height: 20.5rem;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  .content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: calc(100vh);
+    background-color: $color-background;
+  }
+
+  .login-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 13.5rem;
+    width: 26rem;
+    height: 27rem;
+
+    & .login-form-logo {
+      position: absolute;
+      border-radius: 50%;
+      background: $logo-background-color;
+      height: 13.3rem;
+      width: 13.3rem;
+      top: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .material-icons {
+        position: absolute;
+        font-size: 10rem;
+        color: red;
+      }
+    }
+
+    & .login-form-wrapper {
+      background-color: $form-background-color;
+      border: $logo-form-border-color solid 1px;
+      box-sizing: border-box;
+      height: 20.5rem;
+      display: flex;
+      align-items: flex-end;
+    }
   }
 }
 

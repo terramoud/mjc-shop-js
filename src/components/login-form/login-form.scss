@@ -1,18 +1,84 @@
 @media only screen and (max-width: 576px) {
   .login-form {
-
+    box-sizing: border-box;
+    height: 15rem;
+    width: 100%;
+    & .login-form-fieldset {
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & input {
+        border-color: $field-border-color;
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+        font-family: Arial, serif;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 100%;
+      }
+      & .login-form-submit-button {
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .login-form {
-
+    box-sizing: border-box;
+    height: 15rem;
+    width: 26rem;
+    & .login-form-fieldset {
+      padding: 3rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & input {
+        border-color: $field-border-color;
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+        font-family: Arial, serif;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 16rem;
+      }
+      & .login-form-submit-button {
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+        width: 16rem;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .login-form {
-
+    box-sizing: border-box;
+    height: 15rem;
+    width: 26rem;
+    & .login-form-fieldset {
+      padding: 3rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & input {
+        border-color: $field-border-color;
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+        font-family: Arial, serif;
+        text-align: center;
+        font-size: 1.2rem;
+        width: 16rem;
+      }
+      & .login-form-submit-button {
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+        width: 16rem;
+      }
+    }
   }
 }
 
@@ -25,6 +91,7 @@
       padding: 3rem 3.5rem;
       display: flex;
       flex-direction: column;
+      align-items: center;
       & input {
         border-color: $field-border-color;
         height: 2.5rem;
@@ -32,10 +99,12 @@
         font-family: Arial, serif;
         text-align: center;
         font-size: 1.2rem;
+        width: 16rem;
       }
-      & .login-button {
+      & .login-form-submit-button {
         height: 2.5rem;
         margin-bottom: 0.5rem;
+        width: 16rem;
       }
     }
   }
