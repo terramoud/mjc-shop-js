@@ -7,367 +7,78 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<section class="grid-container">
-    <div class="grid-item">
-        <header class="header">
-            <div class="header-left-side">
-                <div class="burger-menu">
-                    <span class="material-icons">menu</span>
+    <section class="grid-container">
+        <div class="grid-item">
+            <header class="header">
+                <div class="header-left-side">
+                    <div class="burger-menu">
+                        <span class="material-icons">menu</span>
+                    </div>
+                    <div class="logo">
+                        <span class="material-icons">card_giftcard</span>
+                    </div>
                 </div>
-                <div class="logo">
-                    <span class="material-icons">card_giftcard</span>
-                </div>
-            </div>
-            <div class="search-form">
-                <input class="search-field" type="text" name="search-query" placeholder="search by item name"/>
-                <select class="categories-dropdown" name="" id="">
-                    <optgroup label="All Categories">
+                <div class="search-form">
+                    <input id="search-input" class="search-field" type="text" placeholder="search by item name"/>
+                    <select class="categories-dropdown" name="" id="">
                         <option selected value="">All Categories</option>
-                        <option value="">Some Category</option>
-                    </optgroup>
-                </select>
-            </div>
-            <nav class="navbar header-right-side">
-                <button class="favorite-button">
-                    <span class="material-icons">favorite</span>
+                        <option value="">beauty salons</option>
+                        <option value="">for motorists</option>
+                        <option value="">sightseeing ride</option>
+                        <option value="">for gourmets</option>
+                        <option value="">photosession</option>
+                    </select>
+                </div>
+                <nav class="navbar header-right-side">
+                    <button class="favorite-button">
+                        <span class="material-icons">favorite</span>
+                    </button>
+                    <button class="cart-button">
+                        <span class="material-icons">shopping_cart</span>
+                    </button>
+                    <div class="login-button-wrapper">
+                        <button class="login-button">Login</button>
+                        <span class="login-delimiter">|</span>
+                        <button class="signup-button">Sign Up</button>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="grid-item">
+            <main class="content">
+                <nav class="categories">
+                    <div class="category-card">
+                       <div class="category-card-image"></div>
+                       <div class="category-card-name">beauty salons</div>
+                   </div>
+                   <div class="category-card">
+                       <div class="category-card-image"></div>
+                       <div class="category-card-name">for motorists</div>
+                   </div>
+                   <div class="category-card">
+                       <div class="category-card-image"></div>
+                       <div class="category-card-name">sightseeing ride</div>
+                   </div>
+                   <div class="category-card">
+                       <div class="category-card-image"></div>
+                       <div class="category-card-name">for gourmets</div>
+                   </div>
+                   <div class="category-card">
+                       <div class="category-card-image"></div>
+                       <div class="category-card-name">photosession</div>
+                   </div>
+                </nav>
+                <section class="coupon-card-wrapper"></section>
+                <ul id="pagination" class="pagination"></ul>
+            </main>
+        </div>
+        <div class="grid-item">
+            <footer class="footer">
+                <button id="scroll-to-top" class="scroll-to-top-button">
+                    <span class="material-icons">expand_less</span>
                 </button>
-                <button class="cart-button">
-                    <span class="material-icons">shopping_cart</span>
-                </button>
-                <div class="login-button-wrapper">
-                    <button class="login-button">Login</button>
-                    <span class="login-delimiter">|</span>
-                    <button class="signup-button">Sign Up</button>
-                </div>
-            </nav>
-        </header>
-    </div>
-    <div class="grid-item">
-        <main class="content">
-            <nav class="categories">
-                <div class="category-card">
-                   <div class="category-card-image"></div>
-                   <div class="category-card-name">Category</div>
-               </div>
-               <div class="category-card">
-                   <div class="category-card-image"></div>
-                   <div class="category-card-name">Category</div>
-               </div>
-               <div class="category-card">
-                   <div class="category-card-image"></div>
-                   <div class="category-card-name">Category</div>
-               </div>
-               <div class="category-card">
-                   <div class="category-card-image"></div>
-                   <div class="category-card-name">Category</div>
-               </div>
-               <div class="category-card">
-                   <div class="category-card-image"></div>
-                   <div class="category-card-name">Category</div>
-               </div>
-               <div class="category-card">
-                   <div class="category-card-image"></div>
-                   <div class="category-card-name">Category</div>
-               </div>
-               <div class="category-card">
-                   <div class="category-card-image"></div>
-                   <div class="category-card-name">Category</div>
-               </div>
-            </nav>
-            <section class="coupon-card-wrapper">
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name0</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name1</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name2</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name3</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name4</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name5</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name6</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name7</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name8</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name9</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name10</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name11</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name12</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name13</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image"></div>
-                    <div class="card-sections-wrapper">
-                        <div class="card-section">
-                            <div class="card-name">Coupon name14</div>
-                            <div class="card-like-button">
-                                <span class="material-icons">favorite</span>
-                            </div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-description">Some brief description</div>
-                            <div class="card-expire-time">Expires in 3 days</div>
-                        </div>
-                        <div class="card-section">
-                            <div class="card-price">$235</div>
-                            <button class="button-cancel add-to-card">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-    <div class="grid-item">
-        <footer class="footer">
-            <!-- Footer content goes here -->
-        </footer>
-    </div>
-</section>
+            </footer>
+        </div>
+    </section>
 </body>
 </html>

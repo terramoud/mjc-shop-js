@@ -10,6 +10,7 @@
 @import './src/components/button-cancel/button-cancel';
 @import './src/components/category-card/category-card';
 @import './src/components/card/card';
+@import './src/components/scroll-to-top-button/scroll-to-top-button';
 
 @media only screen and (max-width: 576px) {
   .content {
@@ -42,7 +43,7 @@
  }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 766px) {
+@media only screen and (min-width: 577px) and (max-width: 767px) {
   .content {
     background-color: $color-background;
   }
@@ -130,6 +131,43 @@
       padding-bottom: 1.5rem;
     }
   }
+}
+
+.pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pagination li a {
+  color: gray;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.pagination li span {
+  color: gray;
+  text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 17px;
+  display: inline;
+}
+
+.pagination li a.active {
+  color: white;
+  background-color: gray;
 }
 
 

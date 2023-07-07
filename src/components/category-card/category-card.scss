@@ -1,5 +1,8 @@
 @media only screen and (max-width: 576px) {
   .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &-image {
       background-color: $category-bg-color;
       height: 4rem;
@@ -13,6 +16,9 @@
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &-image {
       background-color: $category-bg-color;
       height: 4rem;
@@ -26,6 +32,9 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &-image {
       background-color: $category-bg-color;
       height: 4rem;
@@ -39,6 +48,9 @@
 
 @media only screen and (min-width: 1025px) {
   .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &-image {
       background-color: $category-bg-color;
       height: 4rem;

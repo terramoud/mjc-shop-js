@@ -1,6 +1,6 @@
 @media only screen and (max-width: 576px) {
   .card {
-    min-width: 14rem;
+    width: 14rem;
     &-image {
       background-color: $card-image-bg-color;
       height: 12rem;
@@ -22,7 +22,10 @@
       }
     }
     &-name {
-
+      height: 1.2rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 80%;
     }
     &-like-button {
       & .material-icons {
@@ -31,9 +34,17 @@
     }
     &-description {
       font-size: 0.7rem;
+      height: 0.8rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 60%;
     }
     &-expire-time {
       font-size: 0.5rem;
+      padding-top: 0.15rem;
+      height: 0.8rem;
+      overflow: hidden;
+      width: 35%;
     }
     & .add-to-card {
       padding: 0.25rem 0.5rem;
@@ -47,7 +58,7 @@
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   .card {
-    min-width: 14rem;
+    width: 14rem;
     &-image {
       background-color: $card-image-bg-color;
       height: 12rem;
@@ -69,7 +80,10 @@
       }
     }
     &-name {
-
+      height: 1.2rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 80%;
     }
     &-like-button {
       & .material-icons {
@@ -78,9 +92,17 @@
     }
     &-description {
       font-size: 0.7rem;
+      height: 0.8rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 60%;
     }
     &-expire-time {
       font-size: 0.5rem;
+      padding-top: 0.15rem;
+      height: 0.8rem;
+      overflow: hidden;
+      width: 35%;
     }
     & .add-to-card {
       padding: 0.25rem 0.5rem;
@@ -94,7 +116,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .card {
-    min-width: 14rem;
+    width: 14rem;
     &-image {
       background-color: $card-image-bg-color;
       height: 12rem;
@@ -116,7 +138,10 @@
       }
     }
     &-name {
-
+      height: 1.2rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 80%;
     }
     &-like-button {
       & .material-icons {
@@ -125,9 +150,17 @@
     }
     &-description {
       font-size: 0.7rem;
+      height: 0.8rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 60%;
     }
     &-expire-time {
       font-size: 0.5rem;
+      padding-top: 0.15rem;
+      height: 0.8rem;
+      overflow: hidden;
+      width: 35%;
     }
     & .add-to-card {
       padding: 0.25rem 0.5rem;
@@ -141,7 +174,7 @@
 
 @media only screen and (min-width: 1025px) {
   .card {
-    min-width: 14rem;
+    width: 14rem;
     &-image {
       background-color: $card-image-bg-color;
       height: 12rem;
@@ -163,7 +196,10 @@
       }
     }
     &-name {
-
+      height: 1.2rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 80%;
     }
     &-like-button {
       & .material-icons {
@@ -172,9 +208,17 @@
     }
     &-description {
       font-size: 0.7rem;
+      height: 0.8rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 60%;
     }
     &-expire-time {
       font-size: 0.5rem;
+      padding-top: 0.15rem;
+      height: 0.8rem;
+      overflow: hidden;
+      width: 35%;
     }
     & .add-to-card {
       padding: 0.25rem 0.5rem;

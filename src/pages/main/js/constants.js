@@ -1,0 +1,8 @@
+export const LIMIT_CARDS_PER_PAGE = 10;
+export const NUMBER_BUTTONS_FOR_FULL_SIZE_PAGINATION = 5;
+export const MIN_VALUE_PREV_PAGE = 2;
+export const NUMBER_GENERATED_CARDS = 500;
+export const MIN_SCROLL_TO_DISPLAY_BUTTON = 100;
+export const SCROLL_DURATION = 2000;
+export const DELAY_BETWEEN_THROTTLING = 250;
+export const TOP_OF_PAGE = 0;
